@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ответы VNK на YouTube</title>
+<style>
+  :root {
+    --fon: #f6f6f3; --kartochka: #ffffff; --tekst: #1b1b19; --tusk: #6a6a64; --linia: #e2e2dc;
+    --akcent: #1f6feb; --akcent-tekst: #ffffff; --otvet-fon: #f0f5ff;
+    --slom: #b3261e; --slom-fon: #fdecea; --ishch: #1a6b3c; --ishch-fon: #e7f5ec; --nezah: #7a5a00; --nezah-fon: #fbf3dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fon: #151514; --kartochka: #1e1e1c; --tekst: #ecece7; --tusk: #9b9b94; --linia: #2f2f2c;
+      --akcent: #6aa6ff; --akcent-tekst: #0b1220; --otvet-fon: #1a2333;
+      --slom: #ff8a80; --slom-fon: #3a1c1a; --ishch: #7fd6a0; --ishch-fon: #16301f; --nezah: #f0c65a; --nezah-fon: #332a12;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fon: #151514; --kartochka: #1e1e1c; --tekst: #ecece7; --tusk: #9b9b94; --linia: #2f2f2c;
+    --akcent: #6aa6ff; --akcent-tekst: #0b1220; --otvet-fon: #1a2333;
+    --slom: #ff8a80; --slom-fon: #3a1c1a; --ishch: #7fd6a0; --ishch-fon: #16301f; --nezah: #f0c65a; --nezah-fon: #332a12;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fon); color: var(--tekst); font: 16px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 0 16px 64px; }
+  header { padding: 28px 0 8px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .pod { color: var(--tusk); margin: 0; }
+  .panel { position: sticky; top: 0; z-index: 2; background: var(--fon); padding: 12px 0; border-bottom: 1px solid var(--linia);
+           display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .polosa { flex: 1 1 200px; height: 8px; background: var(--linia); border-radius: 99px; overflow: hidden; }
+  .polosa div { height: 100%; width: 0; background: var(--akcent); transition: width .2s; }
+  .panel b { white-space: nowrap; }
+  .panel label { color: var(--tusk); font-size: 14px; white-space: nowrap; cursor: pointer; }
+  details { background: var(--kartochka); border: 1px solid var(--linia); border-radius: 12px; padding: 12px 16px; margin: 16px 0 8px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details ol { margin: 10px 0 2px; padding-left: 20px; }
+  details li { margin-bottom: 6px; }
+  h2 { font-size: 20px; margin: 32px 0 2px; }
+  .schet { color: var(--tusk); font-weight: 400; }
+  .pochemu { color: var(--tusk); margin: 0 0 12px; font-size: 15px; }
+  .k { background: var(--kartochka); border: 1px solid var(--linia); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; transition: opacity .2s; }
+  .k.gotovo { opacity: .45; }
+  body.skryt .k.gotovo { display: none; }
+  .shapka { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .metka { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 99px; }
+  .metka.slom { color: var(--slom); background: var(--slom-fon); }
+  .metka.ishch { color: var(--ishch); background: var(--ishch-fon); }
+  .metka.nezah { color: var(--nezah); background: var(--nezah-fon); }
+  .kto { color: var(--tusk); font-size: 14px; overflow-wrap: anywhere; }
+  blockquote { margin: 0 0 6px; padding-left: 12px; border-left: 3px solid var(--linia); overflow-wrap: anywhere; }
+  .rolik { color: var(--tusk); font-size: 13px; margin-bottom: 8px; overflow-wrap: anywhere; }
+  .otkryt { display: inline-block; color: var(--akcent); font-weight: 600; text-decoration: none; margin-bottom: 10px; }
+  .otvet { background: var(--otvet-fon); border-radius: 10px; padding: 10px 12px; }
+  .podpis { font-size: 12px; font-weight: 600; color: var(--tusk); text-transform: uppercase; letter-spacing: .04em; }
+  .tekst-otveta { margin: 4px 0 10px; overflow-wrap: anywhere; }
+  .deystviya { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 8px 14px; background: var(--akcent); color: var(--akcent-tekst); cursor: pointer; }
+  .otvetil { cursor: pointer; }
+  .otvetil input { width: 18px; height: 18px; vertical-align: -3px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ответы VNK на YouTube</h1>
+    <p class="pod">49 человек из комментариев под роликами про VPN. Каждому написан свой ответ. Собрано 27.09.2026.</p>
+  </header>
+
+  <div class="panel">
+    <b id="schet">Отвечено 0 из 49</b>
+    <div class="polosa"><div id="polosa"></div></div>
+    <label><input type="checkbox" id="skryt"> Скрыть отвеченных</label>
+  </div>
+
+  <details open>
+    <summary>Как отвечать</summary>
+    <ol>
+      <li><b>С канала «VNK — поддержка», не с основного канала VNK.</b> Если YouTube начнёт прятать ответы, пострадает только канал поддержки.</li>
+      <li><b>С компьютера.</b> Ссылка откроет ролик, а нужный комментарий будет первым, с пометкой «Выделенный комментарий». Жми «Ответить» под ним и вставляй текст. Приложение на телефоне часто открывает просто ролик.</li>
+      <li><b>Не больше 10–15 ответов в день, вразброс по времени.</b> Десятки ответов подряд — главный признак спама. Галочки «Ответил» запоминаются в этом браузере, можно продолжать завтра.</li>
+      <li><b>Ответы со ссылкой YouTube может задержать на проверку</b> у автора ролика. Через час открой ролик в режиме инкогнито: если ответа не видно, удали его и отправь тот же текст без ссылки.</li>
+      <li>Начинай сверху: первая группа — самая ценная, внутри групп сначала самые свежие.</li>
+    </ol>
+  </details>
+
+  
+  <section>
+    <h2>Сломался чужой VPN <span class="schet">27</span></h2>
+    <p class="pochemu">Самые ценные: VPN им уже нужен, многие за него платят, а свой подвёл.</p>
+    
+    <article class="k" data-id="UgzVqnumWsZ1-1Y8EzZ4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@m.e.d.4205 · написал 27.09</span>
+      </div>
+      <blockquote>Portal Connect крутая и удобная программа, но не работает. 😢</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=UgzVqnumWsZ1-1Y8EzZ4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Жаль, когда удобная программа вдруг встаёт. Если нужен запасной вариант — у нас в VNK подключение через приложение Happ, первые три дня бесплатно, чтобы проверить у себя: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugy46qQkSiE_mziohDp4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Art-l6c8z · написал 27.09</span>
+      </div>
+      <blockquote>Я по твоему сделал запрет Discord YouTube дашел до Сервии bat и нажал правой кнопкой мыши у меня ничего не работает что делать</blockquote>
+      <div class="rolik">Под роликом: Как разблокировать YouTube и Discord в 2026 — Zapret для всех провайдеров · Dailyhardcore</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=ozLJNnsctio&amp;lc=Ugy46qQkSiE_mziohDp4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">С zapret так часто бывает: сегодня YouTube и Discord открываются, после обновления уже нет, и начинается разбор заново. Если надоест возиться с батниками — у VNK всё в одном приложении Happ, пробный период на 3 дня: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxFLHYNbamzbyHVkvR4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Paspartam · написал 26.09</span>
+      </div>
+      <blockquote>ХЗ, у меня запрет уже давно не работает, сколько не шамань. Варп да, разблокирует почти все. Но не картинки в телеграмм.</blockquote>
+      <div class="rolik">Под роликом: ЗАПРЕТ 2.0 — как вернуть ВЕСЬ интернет бесплатно (Mac + Windows) · Я в России</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WyVltGxU4oE&amp;lc=UgxFLHYNbamzbyHVkvR4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Похоже, у тебя уже целый набор инструментов, и у каждого свои дыры — вот и картинки в Telegram 🙂 Мы в VNK сделали полноценный VPN: одно приложение Happ вместо набора. Попробуй три дня бесплатно и проверь, грузится ли в Telegram всё.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgyOCFL9HD7mCZII9ul4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Katran1970 · написал 26.09</span>
+      </div>
+      <blockquote>Portal Conect отдельно у меня не работает,а с Амнезией работает.Фигня какаяя-то.</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=UgyOCFL9HD7mCZII9ul4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Раз Portal отдельно капризничает и рядом приходится держать Амнезию — глянь ещё один вариант. У VNK одно приложение вместо связки из двух, первые 3 дня бесплатно: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgyWHA-3fTbhpvnQF0h4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@marateruov1784 · написал 26.09</span>
+      </div>
+      <blockquote>Киберпортал не работает строка конект ,</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=UgyWHA-3fTbhpvnQF0h4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если Киберпортал упёрся в «коннект», со своей стороны его не починить — остаётся ждать разработчиков. Хочешь, чтобы работало уже сегодня, — попробуй VNK, три дня бесплатно. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugzx1_WIyQKQ_7izUIp4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Олега-ж7ж · написал 26.09</span>
+      </div>
+      <blockquote>Portal connect тоже не работает</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=Ugzx1_WIyQKQ_7izUIp4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Похоже, у Portal сейчас проблемы не только у тебя — тут в комментариях таких много. Если нужен запасной вариант на время или насовсем, у нас в VNK пробный период 3 дня, дальше от 199 ₽ в месяц.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxZsKfnWJJ-hgOeS9d4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@ГошаГоша-х8ш · написал 26.09</span>
+      </div>
+      <blockquote>Что с Ростелеком? ЗАПРЕТ перестал работать 😢</blockquote>
+      <div class="rolik">Под роликом: Новый способ обхода блокировки Telegram. Что такое WEB Proxy · Бумага. Петербург</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=TWRZuAIsjOU&amp;lc=UgxZsKfnWJJ-hgOeS9d4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Бесплатные решения часто перестают работать после изменений у провайдера, и с этим мало что сделаешь. Проверь VNK на своём Ростелекоме: три дня бесплатно, подключение через приложение Happ. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxG-G1MPqOS5bWEMWB4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@ГалинаВеретенникова-р5с · написал 26.09</span>
+      </div>
+      <blockquote>Portal connect у меня уже несколько версий совершенно не работает!🤷</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=UgxG-G1MPqOS5bWEMWB4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Несколько версий подряд — это уже не случайность. Если устал ждать, пока починят, попробуй VNK: приложение Happ и пробный период на 3 дня. Всё есть на нашем канале.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugy-uGMTs2h3pECPD3J4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Елена-ч6г8ж · написал 26.09</span>
+      </div>
+      <blockquote>На портал Коннект не работает инстаграм почему-то</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=Ugy-uGMTs2h3pECPD3J4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если через Portal не открывается именно Instagram, дело скорее в самом сервисе, а не в твоём телефоне. Попробуй VNK: полноценный VPN, первые три дня бесплатно — проверишь Instagram сам.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxYmEd1v7AYWSNStmp4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@НикНик-м5б · написал 26.09</span>
+      </div>
+      <blockquote>Я обновил этот впн в Нижнем Новгороде не работает блокировки вышли на новый уровень</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=UgxYmEd1v7AYWSNStmp4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Жаль, что после обновления всё встало. Проверь VNK у себя в Нижнем: подключение через Happ за пару минут, первые 3 дня бесплатно, не подойдёт — ничего не потеряешь. vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgybLVZnhESOi2uEkkF4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@hanshi940 · написал 26.09</span>
+      </div>
+      <blockquote>ВопросЫ! 1.Есть случаи когда у меня не работает один из zapret что тогда, warp будет что то с этим делать? 2.Играя в игры в тот же PABG как будет вести себя, почти всегда с zapret у меня игра не запускается даже когда стоит Game Filter! 3.Как дела будет обстоять с пингом? За ранее спасибо за ответ))</blockquote>
+      <div class="rolik">Под роликом: ЗАПРЕТ 2.0 — как вернуть ВЕСЬ интернет бесплатно (Mac + Windows) · Я в России</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WyVltGxU4oE&amp;lc=UgybLVZnhESOi2uEkkF4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если PUBG с zapret даже не запускается, возможно, проще взять обычный VPN, где не нужно подбирать фильтры. У VNK три дня бесплатно — успеешь проверить у себя и запуск, и пинг. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugxq4xGAChoIXe_Ibix4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@geo-tube · написал 25.09</span>
+      </div>
+      <blockquote>На ТрансТелеком-е (аплинк провайдера) ваш ВПН не работает уже вторую неделю. Чинить будете? Или что?</blockquote>
+      <div class="rolik">Под роликом: Как безопасно пользоваться VPN в 2026 году · Liberty Project</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=a250NCq_i4M&amp;lc=Ugxq4xGAChoIXe_Ibix4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Две недели без связи — это долго. Пока автор чинит, попробуй на своём ТрансТелекоме VNK: пробный период на 3 дня, дальше от 199 ₽ в месяц.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxLkZFSxx9G6iZxAdx4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Lesya-nlmNnn · написал 25.09</span>
+      </div>
+      <blockquote>Амнезия не работает с тг. Даже платная.</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgxLkZFSxx9G6iZxAdx4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Обидно, когда платишь, а Telegram всё равно не работает. Попробуй VNK именно на нём: первые три дня бесплатно, потом от 199 ₽ в месяц. Взять можно на сайте, без Telegram: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzI0BtQgF_USi7kjkF4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@гпвгксгкоам · написал 25.09</span>
+      </div>
+      <blockquote>А я просто скачиваю из плей маркета бесплатные впн пару штук и пользуюсь пока работают, если 1 не работает второй включаю, если не 1 не работает новый скачиваю</blockquote>
+      <div class="rolik">Под роликом: VPN всё( · днл)</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=fFYDX70SvrM&amp;lc=UgzI0BtQgF_USi7kjkF4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Рабочая схема, пока не надоест искать новый каждую неделю 🙂 Если захочешь попробовать платный вместо карусели бесплатных — у VNK три дня бесплатно, дальше от 199 ₽ в месяц: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgyC4pNZoDY8lHcDRDB4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@ОлегГринев-в1я · написал 24.09</span>
+      </div>
+      <blockquote>Скачивал эту амнезию ! Ни хрена не работает!</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=UgyC4pNZoDY8lHcDRDB4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если Амнезия так и не завелась — не трать на неё ещё вечер. Попробуй VNK: ставишь приложение Happ, добавляешь подписку и подключаешься. Три дня бесплатно, бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugxw-akGM7NbX-r38Nh4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@tomzendaya8464 · написал 24.09</span>
+      </div>
+      <blockquote>а почему у меня запрет вообще не работает, тоже 11 винда, настраивал как в видео, но делая ран тест везде красное, ни один сервис не работает</blockquote>
+      <div class="rolik">Под роликом: ЗАПРЕТ 2.0 — как вернуть ВЕСЬ интернет бесплатно (Mac + Windows) · Я в России</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WyVltGxU4oE&amp;lc=Ugxw-akGM7NbX-r38Nh4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Когда в тесте всё красное, дальше обычно начинается долгий подбор стратегий. Если не хочется в это погружаться — VNK ставится на Windows через приложение Happ, без тестов и батников. Первые 3 дня бесплатно, подробности на нашем канале.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgytDdyEfl7YwRtuuBp4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@ohammed5281 · написал 24.09</span>
+      </div>
+      <blockquote>Всех приветствую, может кто подсказать ситуация такая: месяца 4-5 пользуюсь амнизия но последнее 2-3 дня ватсап и телеграмм не работает (а всё остальное работает инстаграм, ютуб)?</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=UgytDdyEfl7YwRtuuBp4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Раз Instagram и YouTube работают, а WhatsApp с Telegram отвалились, похоже, дело в серверах Амнезии, а не в тебе. Проверь VNK параллельно — три дня бесплатно, сравнишь на тех же мессенджерах. Сайт: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzGkmGa-ix6Myf_Eyd4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@kokaabricosov9874 · написал 24.09</span>
+      </div>
+      <blockquote>Хрень полная.На мобильном интернете не пашет. На домашнем вайфае ещё ладно, по сути тот же впн, для домашнего использования.У меня стоит portal wg для дома и соответственно через вафлю, когда мобильный интернет глушат portal wg не фурычит. Хоть хрен знает сколько можете прописать днс в этом byebyedpi,всё равно работать не будет на мобильном интернете. Соответственно вывод какой? А такой, на фига он нужен и все эти заморочки с прописью, если есть проги на подобии portal wg, где тупо один раз нажа</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgzGkmGa-ix6Myf_Eyd4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">С мобильным интернетом сейчас правда сложнее всего, дома через вайфай всё гораздо проще. Честно скажем: на мобильном у всех по-разному, всё зависит от оператора и места. Поэтому у VNK три дня бесплатно — проверь именно на своём мобильном, прежде чем платить.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxJfFbWRPWUVdxzc3d4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@sergeitoricato1977 · написал 23.09</span>
+      </div>
+      <blockquote>Амнезия почему то не устанавливается через телегу.😮 Скажите,а Portal connect фсё сдох? Вчера новая версия поработала сегодня фсё ☹️</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=UgxJfFbWRPWUVdxzc3d4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Два инструмента сразу отвалились — неприятно. Если через Telegram ничего не ставится, VNK можно взять на сайте vnklab.com: приложение Happ есть для телефона и компьютера, первые три дня бесплатно.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxKFu1pDy7w0nBkoUR4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@ВСЁБУДЕТКРУТО-р8я · написал 23.09</span>
+      </div>
+      <blockquote>раньше работали vpn а сейчас не один не работает не знаю что случилось</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=UgxKFu1pDy7w0nBkoUR4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Бесплатные VPN сейчас и правда отваливаются один за другим. Попробуй VNK — пробный период 3 дня, так что проверишь без риска. Подключение через приложение Happ.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugx3O2K8FoMXjz4K87Z4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@user-hf76vgolhfy7u · написал 22.09</span>
+      </div>
+      <blockquote>Я так понял - это реклама. До этого я почти все последнее время &quot;сидел&quot; на Порталах. Особенно - на том, что с советской символикой) Не из-за &quot;символики&quot; - просто он работал безотказно. НО... Но перестал. Резко и полностью. Причем - во всех своих ипостасях... Поэтому да - вынужденно перешел на &quot;Амнезию&quot;. Но работает она так себе... В телеграм с нее войти получается раз на 5-10й... На ютуб да - заходит. Бай-бай - работает. Но НЕ ШИФРУЕТ ТРАФФИК. А в наших реалиях это очень важно! Поэтому - Амнезия</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=Ugx3O2K8FoMXjz4K87Z4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Понимаем: важно, чтобы трафик шифровался, а Telegram открывался с первого раза, а не с пятого. VNK — полноценный VPN, соединение шифруется целиком. Проверь три дня бесплатно, как он держится у тебя: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzgaDJifBxoFj9aw0d4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@TANYSHKA0612 · написал 22.09</span>
+      </div>
+      <blockquote>Странно,перестали работать все впн,что предлагает автор.Удалила,заново скачала,ничего не поменялось.</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=UgzgaDJifBxoFj9aw0d4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Переустановка тут, скорее всего, не поможет — похоже, дело в самих сервисах. Попробуй VNK: три дня бесплатно, подключение через приложение Happ, а если что-то не получится — поможем настроить. Всё есть на нашем канале.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzFR7HBEQPZowrg4c14AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@RomanKorkin-mj2hx · написал 22.09</span>
+      </div>
+      <blockquote>В том то и дело,что бесплатные программы работают,а зачем тогда покупать амнезию?у меня как и у тебя все бесплатные проги на всякий случай,плюс для ТГ telegram ws стоит😅.у меня есть премиум,но я через кибер портал х сижу,амнезия долго подключается и Ютуб бывает тормозит через неё и бай бай тоже самое😂.вопрос у меня только один:для чего мне продлять премиум?если кто знает-буду благодарен за объяснение.</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=UgzFR7HBEQPZowrg4c14AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Хороший вопрос себе задаёшь 🙂 Если премиум долго подключается и YouTube через него тормозит, есть смысл сравнить с другим сервисом, прежде чем продлевать. У VNK пробный период на 3 дня, дальше от 199 ₽ в месяц.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzYpI5f9fmZOBTHq594AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@МурадМурадов-н4н · написал 21.09</span>
+      </div>
+      <blockquote>Киберпортале connect не работает, как устранить? Пж</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgzYpI5f9fmZOBTHq594AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Киберпортал сейчас подводит не только тебя — тут в комментариях такие же жалобы. Если нужно, чтобы работало уже сегодня, попробуй VNK: три дня бесплатно, настройка через приложение Happ. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgwlebaX9Lc8EBiRb4l4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@marktor1693 · написал 21.09</span>
+      </div>
+      <blockquote>Да неплохо YouTube хорошо открывает а вот telegram тормозит а с VPN работает и то и то бай-бай dpi единственное для ютюба нормально бесплатно но вот с телеграмом проблема!</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgwlebaX9Lc8EBiRb4l4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Ты сам уже нашёл ответ — с VPN работают и YouTube, и Telegram 🙂 Если хочешь такой, чтобы не переключаться между ByeDPI и чем-то ещё, у VNK три дня бесплатно, дальше от 199 ₽: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxVkOk2AF5aJaQuZsx4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@KYLIMET · написал 21.09</span>
+      </div>
+      <blockquote>Я уже писал напишу еще раз портал конект не работает !обновите</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgxVkOk2AF5aJaQuZsx4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Пока ждёшь обновления Портала, можно не сидеть без связи. У VNK пробный период на 3 дня — хватит, чтобы переждать или остаться: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgyuzcLVrEgd1uLP7_N4AaABAg">
+      <div class="shapka">
+        <span class="metka slom">Сломался чужой VPN</span>
+        <span class="kto">@Kwokijam · написал 21.09</span>
+      </div>
+      <blockquote>Говно не рабочее. Я на комп добавил и ничего не появляется в Happ. Серверов просто нет</blockquote>
+      <div class="rolik">Под роликом: КАК ОБОЙТИ БЛОКИРОВКУ ТЕЛЕГРАМ В РОССИИ | РАБОЧИЙ ОБХОД БЛОКИРОВКИ ТЕЛЕГРАМ · Теперь я Знаю</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=D8ZHHcE__4U&amp;lc=UgyuzcLVrEgd1uLP7_N4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Пустой список серверов в Happ обычно значит, что подписка у того сервиса не подтянулась. У нас подписка VNK добавляется в тот же Happ, и первые три дня бесплатно — попробуй. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Ищут VPN или спрашивают цену <span class="schet">8</span></h2>
+    <p class="pochemu">Прямой вопрос — отвечать по существу.</p>
+    
+    <article class="k" data-id="Ugw2JtQ966i1paO-IY94AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@dmitryghost8700 · написал 26.09</span>
+      </div>
+      <blockquote>Ребята подскажите пожалуйста , какой из них впн лучше для пинга в call of duty mobile на вай-фай Пинг под 200😢</blockquote>
+      <div class="rolik">Под роликом: ОБНОВЛЕНИЕ VPN👉 Как обойти ВСЕ блокировки на Андроид! Как восстановить Телеграм, Воцап, Ютуб · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=PMS7Kwk3TUY&amp;lc=Ugw2JtQ966i1paO-IY94AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Пинг в играх сильно зависит от сервера и твоего провайдера — заранее честно никто не скажет. У VNK три дня бесплатно: зайди в Call of Duty и посмотри пинг сам.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugy8PofpJ73mcxD-YqJ4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@Сантьяго-п2ш · написал 26.09</span>
+      </div>
+      <blockquote>сделал все как на видео по итогу ютуб работает только с включенным Cloudflare, версия запрета 1.10.3, до этого на 1.10.2 и 1.10.1 все работало, подскажи в чем может быть проблемка?</blockquote>
+      <div class="rolik">Под роликом: ЗАПРЕТ 2.0 — как вернуть ВЕСЬ интернет бесплатно (Mac + Windows) · Я в России</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WyVltGxU4oE&amp;lc=Ugy8PofpJ73mcxD-YqJ4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Похоже, новые версии zapret у тебя ломают YouTube, который раньше работал. Если не хочется откатываться после каждого обновления — у VNK обычный VPN через приложение Happ, пробный период на 3 дня. Всё есть на нашем канале.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxEglh6KLueIAnGw7d4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@BanShie-RU · написал 26.09</span>
+      </div>
+      <blockquote>Где взять ВПН, что бы поставить ВПН? )))</blockquote>
+      <div class="rolik">Под роликом: ЛУЧШИЙ РАБОЧИЙ ВПН ДЛЯ ПК В 2026 | ЛУЧШИЙ ОБХОД БЕЛЫХ СПИСКОВ В РОССИИ · Теперь я Знаю</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pRtBZCqJ9GE&amp;lc=UgxEglh6KLueIAnGw7d4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Хороший вопрос, кстати 🙂 Сайт vnklab.com открывается и без VPN: там берёшь подписку, а приложение Happ есть для телефона и компьютера. Первые три дня бесплатно.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxajoPQo_mEDpHnIkV4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@DENCHIK_ZH · написал 25.09</span>
+      </div>
+      <blockquote>Сколько стоит?</blockquote>
+      <div class="rolik">Под роликом: У МЕНЯ 3 VPN НА ТЕЛЕФОНЕ, А У ТЕБЯ СКОЛЬКО? · Загородный Интернет и Видеонаблюдение</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=QZf7iIo-6Y8&amp;lc=UgxajoPQo_mEDpHnIkV4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если сравниваешь цены: у VNK от 199 ₽ в месяц, а на три месяца и на год выходит ещё дешевле. Плюс три дня бесплатно, чтобы сначала проверить. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugx03cCjoDdX5IpTcVJ4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@ВячеславАнохин-ъ2с · написал 25.09</span>
+      </div>
+      <blockquote>Где и сколько стоит?</blockquote>
+      <div class="rolik">Под роликом: У МЕНЯ 3 VPN НА ТЕЛЕФОНЕ, А У ТЕБЯ СКОЛЬКО? · Загородный Интернет и Видеонаблюдение</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=QZf7iIo-6Y8&amp;lc=Ugx03cCjoDdX5IpTcVJ4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Для сравнения: VNK — от 199 ₽ в месяц, и можно сразу взять подписку на несколько устройств, до пяти. Первые три дня бесплатно: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugxc5y1fkaYxnN-fD8t4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@mobileifrit · написал 24.09</span>
+      </div>
+      <blockquote>У вас довольно дорогой VPN, только это меня останавливает от подписки.</blockquote>
+      <div class="rolik">Под роликом: Как безопасно пользоваться VPN в 2026 году · Liberty Project</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=a250NCq_i4M&amp;lc=Ugxc5y1fkaYxnN-fD8t4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Понимаем, цена — важная штука. Если ищешь дешевле: у нас в VNK от 199 ₽ в месяц, а годовая подписка выходит примерно на треть дешевле помесячной. Пробный период на 3 дня: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzNEa1SEc57oAhnT4R4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@я.майкнрафтер · написал 24.09</span>
+      </div>
+      <blockquote>Подписка сколько стоит?</blockquote>
+      <div class="rolik">Под роликом: VPN для ПК 2026 | Как скачать и установить бесплатный VPN на Windows 10/11 без рекламы · Трудяга | ТГ в профиле</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=F-mYdTGQt08&amp;lc=UgzNEa1SEc57oAhnT4R4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">У VNK подписка от 199 ₽ в месяц за одно устройство, на три месяца и на год — дешевле в пересчёте на месяц. Первые три дня бесплатно, бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzHKKNJ-s4LlcK15lt4AaABAg">
+      <div class="shapka">
+        <span class="metka ishch">Ищут VPN или спрашивают цену</span>
+        <span class="kto">@vladislavvanyukfin6482 · написал 20.09</span>
+      </div>
+      <blockquote>Стримлю в тик токе нужен ВПН, но в последнее время пипец ВПН нормально не даёт стримить, посоветуйте ВПН хороший</blockquote>
+      <div class="rolik">Под роликом: Сравнил ПОПУЛЯРНЫЕ ВПН-ы в 100 ГОРОДАХ России - надёжный и быстрый обход блокировок · Вилли</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=VVZPZ_xYxIE&amp;lc=UgzHKKNJ-s4LlcK15lt4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Для стримов в TikTok важна стабильная скорость, а не только чтобы «открывалось». Проверь VNK прямо на эфире: первые три дня бесплатно, хватит на пару трансляций. Всё есть на нашем канале.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Не могут зайти <span class="schet">14</span></h2>
+    <p class="pochemu">Про VPN не спрашивают, поэтому ответ — подсказка, а не реклама.</p>
+    
+    <article class="k" data-id="UgxLMPmeu9j4eNblLwV4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@C_anchous · написал 27.09</span>
+      </div>
+      <blockquote>Что делать если ютуб вебсайт всегда timeout</blockquote>
+      <div class="rolik">Под роликом: ЗАПРЕТ 2.0 — как вернуть ВЕСЬ интернет бесплатно (Mac + Windows) · Я в России</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WyVltGxU4oE&amp;lc=UgxLMPmeu9j4eNblLwV4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если YouTube в браузере стабильно отвечает таймаутом, настройки тут вряд ли помогут — похоже, его режет провайдер. Попробуй VNK: три дня бесплатно, подключение через приложение Happ. vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxNfn3QNFKWqC3_jMp4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@Anastasiia-gg · написал 27.09</span>
+      </div>
+      <blockquote>Ничего не работает, несколько раз уже пробовала скачать</blockquote>
+      <div class="rolik">Под роликом: КАК ОБОЙТИ БЛОКИРОВКУ ВСЕХ СЕРВИСОВ ?! - Бесплатный ВПН на ПК - Обход Всех блокировок VPN · Oleg Fazbear The Bunny </div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=JXBykCCBPEc&amp;lc=UgxNfn3QNFKWqC3_jMp4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Обидно, когда качаешь раз за разом, а толку нет. Попробуй VNK: ставишь приложение Happ, берёшь подписку в боте vnk_lab_bot — первые три дня бесплатно. Если что-то не выйдет, напиши в бот, поможем.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgzvBEluYGxags5zkol4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@АрисКоломиец · написал 26.09</span>
+      </div>
+      <blockquote>вторая ссылка не открывается , которая 7 дней бесплатно</blockquote>
+      <div class="rolik">Под роликом: VPN для ПК 2026 | Как скачать и установить бесплатный VPN на Windows 10/11 без рекламы · Трудяга | ТГ в профиле</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=F-mYdTGQt08&amp;lc=UgzvBEluYGxags5zkol4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если та ссылка так и не открылась — у VNK пробный период выдаётся прямо в боте vnk_lab_bot, без сторонних ссылок. Три дня бесплатно, подключение через Happ.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugy8wsg97IHmfNTKFI14AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@НиколайКосачев-ц5щ · написал 26.09</span>
+      </div>
+      <blockquote>Я уже заметил, что мобильный интернет работает по своей системе в некоторых местах вообще ничего не открывается кроме белых списков. И никакие впн не помогают. А в другой части города что-то открывается.</blockquote>
+      <div class="rolik">Под роликом: Сильное VPN ОБНОВЛЕНИЕ👉 Как ОБОЙТИ ВСЕ Блокировки? Работает Ютуб, Телеграм, WhatsApp, Инстаграм · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=pENjz3PbLJc&amp;lc=Ugy8wsg97IHmfNTKFI14AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Ты верно заметил: на мобильном сейчас всё зависит от места и оператора, и гарантий тут честно не даст никто. Если захочешь проверить ещё вариант — у VNK три дня бесплатно, попробуй там, где у тебя не открывается.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxXEa1F6DpUX1giTOh4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@АлексейСигутин-з1щ · написал 24.09</span>
+      </div>
+      <blockquote>Как rutracker открыть не открывается</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgxXEa1F6DpUX1giTOh4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если rutracker не открывается ни так, ни через бесплатные программы — попробуй VNK. Пробный период на 3 дня, подключение через приложение Happ: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugwl5xfUPzNtEg3spvN4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@big-26 · написал 24.09</span>
+      </div>
+      <blockquote>Ничего не работает спасибо, хорошие у вас видео, ни один совет не работает на МТС здорово👍😎</blockquote>
+      <div class="rolik">Под роликом: PORTAL Connect 1.3.3 — НОВАЯ ВЕРСИЯ! Обход блокировок на Android · Fixs and Tricks</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=VAQFnakPFqs&amp;lc=Ugwl5xfUPzNtEg3spvN4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Понимаем, когда перепробовал всё из роликов и ничего не помогло. Если захочешь проверить не очередной совет, а готовый сервис, — у VNK три дня бесплатно, проверь на своём МТС.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgyryafHYv9QlxQSoMR4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@evgeniibadakhin3541 · написал 23.09</span>
+      </div>
+      <blockquote>Капец. И как мне это сделать при белых списках? У меня в сбер не заходит. А тут целый телеграмм. Помню подростком был. И у меня со звуком на ноуте что-то было. Я полез в инет и на Ютубе нашел видео &quot;что делать если нет звука на ноуте&quot;. Посмотреть я его посмотрел. Но ничего не понял. Ведь звука не было и субтитров к видео тоже 😂</blockquote>
+      <div class="rolik">Под роликом: Посмотрите, если не работает мобильный интернет #глушилки #блокировки #белыесписки #vpn · Rheonth.Channel</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=Q7Lbs1nMlas&amp;lc=UgyryafHYv9QlxQSoMR4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">История про звук — огонь 😄 А если серьёзно: при белых списках на мобильном сложно всем, тут всё зависит от оператора. У VNK три дня бесплатно — можно проверить, откроется ли у тебя Telegram. Сайт: vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugzy2LvyTO3kn24ChOF4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@egorlonag4675 · написал 23.09</span>
+      </div>
+      <blockquote>А у меня айфон что делать?</blockquote>
+      <div class="rolik">Под роликом: Телеграм перестал работать? Показываю, как обойти блокировку · androtony</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=TwFho4Vr09U&amp;lc=Ugzy2LvyTO3kn24ChOF4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">На айфоне VNK работает через приложение Happ — оно есть и для iPhone. Если Telegram не открывается, подписку можно взять на сайте vnklab.com, первые три дня бесплатно.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugw6rrcHlRXMA9k0oq94AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@K0mbain · написал 23.09</span>
+      </div>
+      <blockquote>а если нет зелёных батов? Только Cloud-ах зелёным, всё остальное красное! Что делать?</blockquote>
+      <div class="rolik">Под роликом: Как разблокировать YouTube и Discord в 2026 — Zapret для всех провайдеров · Dailyhardcore</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=ozLJNnsctio&amp;lc=Ugw6rrcHlRXMA9k0oq94AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Когда зелёным горит одна строчка из всех, дальше начинается долгий перебор. Если не хочется в это играть — у VNK VPN ставится через приложение Happ, без проверок и стратегий. Три дня бесплатно, подробности на нашем канале.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugx4LFWlT4-dTQW3I9B4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@maleficarumm · написал 22.09</span>
+      </div>
+      <blockquote>Впн это шляпа вообще не могу зайти в игру вернулся на впн сота и всё,по поводу Ютуба да патриот работает но в игре пинг 999</blockquote>
+      <div class="rolik">Под роликом: БЫСТРЫЙ VPN 2026 — Самый Лучший ВПН / Обход YouTube, Discord · $taTu$</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=kdYHP8GS1Ig&amp;lc=Ugx4LFWlT4-dTQW3I9B4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Пинг 999 — это уже не игра 🙂 Если с Сотой всё устраивает — отлично. А если в играх пинг скачет, у VNK пробный период на 3 дня: сыграй пару каток и сравни.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgwDFQwgp7oTTo19-BF4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@sanya1568 · написал 22.09</span>
+      </div>
+      <blockquote>Одна из стратегии открывает инсту, но ютуб с ней буксует. На другой летает, но ничего другое не грузит. Универсальной нет</blockquote>
+      <div class="rolik">Под роликом: 🔥 ByeByeDPI 1.7.9 — НОВАЯ ВЕРСИЯ! Обход блокировок на Android TV и Android · Fixs and Tricks</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=IOCF3JFj80M&amp;lc=UgwDFQwgp7oTTo19-BF4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Одна открывает Instagram, другая YouTube, а чтобы всё сразу — нет. Это главный минус стратегий. Обычный VPN избавляет от выбора: у VNK три дня бесплатно, проверь на обоих. vnklab.com</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="Ugyu5mAtZS2vjC4meWV4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@xlDraglONlx · написал 22.09</span>
+      </div>
+      <blockquote>Установил, Настроил все по видео и что то не грузит не чего(</blockquote>
+      <div class="rolik">Под роликом: Обход белых списков через Яндекс Документы за 10 минут · ПОЛЕЗНЫЕ СОВЕТЫ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=4_DHf66FGqo&amp;lc=Ugyu5mAtZS2vjC4meWV4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Хитрые способы вроде обхода через Документы бывают капризными — у одних заводится, у других нет. Если хочешь что-то попроще, попробуй VNK: приложение Happ и три дня бесплатно.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgydAe0wqyjGpTwRv0l4AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@Fancot · написал 21.09</span>
+      </div>
+      <blockquote>Что за гений на авторе, как я скачаю приложение с твоего телеграмма если я не могу зайти в телеграмм? Может человек и заходит на это видео потому что у него не работает тг?</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgydAe0wqyjGpTwRv0l4AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Справедливое замечание 🙂 Поэтому у VNK есть сайт vnklab.com — он открывается без Telegram: регистрируешься и берёшь пробный период на 3 дня. Приложение Happ есть для телефона и компьютера.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+    <article class="k" data-id="UgxjVfLcD88urAQf5094AaABAg">
+      <div class="shapka">
+        <span class="metka nezah">Не могут зайти</span>
+        <span class="kto">@KPRF-kprf8 · написал 20.09</span>
+      </div>
+      <blockquote>Здравствуйте Люди!!! Не могу открыть на компьютере сайт рутрекер.орг . Помогите пожалуйста!!! Бай дпи не помог даже подбор стратегий</blockquote>
+      <div class="rolik">Под роликом: БЕЗ VPN👉 ТОП ОБНОВЛЕНИЕ Как Обходить Блокировки в интернете! Работает Ютуб, Телеграм, WhatsApp · ЗА 5 МИНУТ</div>
+      <a class="otkryt" href="https://www.youtube.com/watch?v=WBax5dAJFuE&amp;lc=UgxjVfLcD88urAQf5094AaABAg" target="_blank" rel="noopener">Открыть комментарий ↗</a>
+      <div class="otvet">
+        <div class="podpis">Ответ</div>
+        <p class="tekst-otveta">Если rutracker не открылся даже после подбора стратегий в ByeDPI, дальше обычно помогает только полноценный VPN. У VNK есть приложение Happ для компьютера и три дня бесплатно — проверь у себя. Бот — vnk_lab_bot.</p>
+        <div class="deystviya">
+          <button type="button" class="kopirovat">Скопировать</button>
+          <label class="otvetil"><input type="checkbox"> Ответил</label>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<script>
+  // Галочки хранятся только в этом браузере. Если хранилище недоступно
+  // (частный режим), страница просто работает без памяти.
+  const KLYUCH = "vnk-otvety-2026-09-27:";
+  const prochitat = (id) => { try { return localStorage.getItem(KLYUCH + id) === "1"; } catch { return false; } };
+  const zapisat = (id, da) => { try { da ? localStorage.setItem(KLYUCH + id, "1") : localStorage.removeItem(KLYUCH + id); } catch {} };
+
+  const kartochki = [...document.querySelectorAll(".k")];
+  const vsego = kartochki.length;
+
+  function obnovit() {
+    const gotovo = kartochki.filter((k) => k.classList.contains("gotovo")).length;
+    document.getElementById("schet").textContent = "Отвечено " + gotovo + " из " + vsego;
+    document.getElementById("polosa").style.width = (gotovo / vsego * 100) + "%";
+  }
+
+  for (const k of kartochki) {
+    const id = k.dataset.id;
+    const galochka = k.querySelector(".otvetil input");
+    galochka.checked = prochitat(id);
+    k.classList.toggle("gotovo", galochka.checked);
+    galochka.addEventListener("change", () => {
+      zapisat(id, galochka.checked);
+      k.classList.toggle("gotovo", galochka.checked);
+      obnovit();
+    });
+
+    const knopka = k.querySelector(".kopirovat");
+    const tekst = k.querySelector(".tekst-otveta").textContent;
+    knopka.addEventListener("click", async () => {
+      let vyshlo = false;
+      try { await navigator.clipboard.writeText(tekst); vyshlo = true; } catch {}
+      if (!vyshlo) {
+        // Запасной путь для браузеров, где буфер обмена закрыт.
+        const pole = document.createElement("textarea");
+        pole.value = tekst;
+        document.body.appendChild(pole);
+        pole.select();
+        try { vyshlo = document.execCommand("copy"); } catch {}
+        pole.remove();
+      }
+      knopka.textContent = vyshlo ? "Скопировано ✓" : "Выдели текст вручную";
+      setTimeout(() => { knopka.textContent = "Скопировать"; }, 1800);
+    });
+  }
+
+  const skryt = document.getElementById("skryt");
+  skryt.addEventListener("change", () => document.body.classList.toggle("skryt", skryt.checked));
+  obnovit();
+</script>
+</body>
+</html>
